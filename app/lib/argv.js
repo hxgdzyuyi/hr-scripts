@@ -24,7 +24,7 @@ export default yargs
     alias: [
       'o',
     ],
-    description: 'Personal access toekn (See more: https://github.com/settings/tokens)',
+    description: '输出的文件格式, xlsx, json 两种可选',
     type: 'string',
   })
   .option('progress', {
