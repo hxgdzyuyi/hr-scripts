@@ -1,24 +1,24 @@
 query {
   repository(owner:"<%= owner %>", name:"<%= name %>") {
     id,
-	mentionableUsers(first: <%= first %>, after: <% print( after ? `"${after}"` : 'null') %>) {
-      edges {
-        node {
-          id,
-          name,
-          login,
-          email,
-          location,
-          websiteUrl,
-		  company
-        }
-      },
-      pageInfo {
-        endCursor
-        startCursor
-		hasNextPage
-      },
-      totalCount
-    }
+      mentionableUsers(first: <%= first %>, after: <% print( after ? `"${after}"` : 'null') %>) {
+        edges {
+          node {
+            id,
+            name,
+            login,
+            email,
+            location,
+            websiteUrl,
+            company
+          }
+        },
+        pageInfo {
+          endCursor
+            startCursor
+            hasNextPage
+        },
+        totalCount
+      }
   }
 }
